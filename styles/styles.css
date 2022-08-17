@@ -3,12 +3,11 @@
 
 html{
     font-family:'Courier New', Courier, monospace;
-    background-color: aliceblue; 
+    background-color: rgb(221, 237, 250); 
 }
 
 nav { /* Navigation bar */
     text-align: center;
-    color:rgb(0, 174, 255);
-    text-shadow: 1px 1px #000000;
+    color:rgb(0, 0, 0);
     font-weight: bold;
 }
