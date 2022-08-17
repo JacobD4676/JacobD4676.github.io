@@ -1,7 +1,14 @@
-/* Style Sheet for Programming Portfolio */
+/* Style sheet for Programming Portfolio */
 @charset "ISO-8859-1";
 
 html{
     font-family:'Courier New', Courier, monospace;
     background-color: aliceblue; 
+}
+
+nav { /* Navigation bar */
+    text-align: center;
+    color:rgb(0, 174, 255);
+    text-shadow: 1px 1px #000000;
+    font-weight: bold;
 }
