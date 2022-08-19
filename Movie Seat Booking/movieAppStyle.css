@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.movie-container {
+    margin: 20px 0;
+}
+
+.movie-container select { /*.movie-container is the Class, and select is the Tag. */
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.container {
+    perspective: 500px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.seat.selected {
+    background-color: #6feaf6
+}
+
+.seat.occupied {
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2){ /*Allows you set custom properties to a certain seat in the seat class. This allows us to set custom properties of seat 2 in the seat class. */
+    margin-right: 18px;
+}
+
+.seat:nth-of-type(7){
+    margin-left: 18px;
+}
+
+.row:nth-of-type(2){ /*Spaces out the first row from the rest of the rows. */
+    margin-bottom: 18px;
+}
+
+.row:nth-of-type(7){ /*Spaces out the last row from the rest of the rows. */
+    margin-top: 18px;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+.legend .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.legend {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.legend li small {
+    margin-left: 3px;
+}
+
+.row {
+    display: flex;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0px;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+    margin: 5px 0px;
+}
+
+p.text span {
+    color: #6feaf6;
+    font-weight: bold;
+}
+

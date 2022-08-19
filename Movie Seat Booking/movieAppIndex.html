@@ -1,0 +1,113 @@
+<!--Created by following alongside the course "20 Web Projects With Vanilla JavaScript" by Brad Traversy on Udemy.com -->
+<!--Course Link: udemy.com/course/web-projects-with-vanilla-javascript/ -->
+<!--Special thanks to Brad for his awesome course! -->
+<!--This project is being deployed for eductional/learning purposes. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movieAppStyle.css">
+    <title>Movie Seat Booking App</title>
+</head>
+<body>
+    <div class="movie-container">
+        <label>Choose a movie:</label>
+        <select id="movie">
+            <option value="16">Avatar 2 ($16)</option>
+            <option value="14">Top Gun 2 ($14)</option>
+            <option value="8">Titanic ($8)</option>
+            <option value="6">Forrest Gump ($6)</option>
+        </select>
+    </div>
+
+    <ul class="legend"> <!--Legend that shows which seats are available, currently selected by user, and which are unavailable.-->
+        <li>
+            <div class="seat"></div>
+            <small>Available</small>
+        </li>
+
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div> <!--Used to create a "movie screen" to enhance UI of app.-->
+        <!--Creates 6x rows with 8x seats in each row.-->
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+
+    <p class="text">
+        You have selected <span id="count">0</span> seats for a total price of <span id="dollarSign">$</span><span id="total">0</span> <!--Span tag is just used to hold the values for count, dollar sign, and total. Its value will change based on selection.-->
+    </p>
+
+    <script src="MovieAppScript.js"></script>
+</body>
+</html>
