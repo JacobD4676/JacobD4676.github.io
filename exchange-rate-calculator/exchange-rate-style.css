@@ -1,0 +1,125 @@
+/* Style sheet for Exchange Rate App */
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap"); /*Import Open Sans font from Google Fonts */
+
+:root {
+   --primary-color: #5cdb95; /*Var declaration & initialization*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Navigation bar*/
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    margin: 1vw; /*vW is viewport width. */
+}
+
+.nav-bar-items { /*Class for list items (li)*/
+    float: left;
+    margin: 0 1vw 0 1vw;
+    font-size: medium;
+}
+
+.nav-bar-items a { /*Class for list items (li) a tags*/
+    color: var(--primary-color);
+    font-family: "Lato", sans-serif;
+}
+
+.nav-bar-items a:hover { /*Changes behavior of a link when user hovers over it*/
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*Body*/
+body {
+    background-color: #edf5e1;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Exchange Rate App */
+.app-container {
+    margin: 5vh 25vw 5vh 25vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+}
+
+.btn {
+   color: #fff;
+   background: var(--primary-color); 
+   cursor: pointer;
+   border-radius: 5px;
+   font-size: medium;
+   padding: 5px 12px;
+}
+
+.money-img {
+    width: 150px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    -moz-apperance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    background-image: url()
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font-size: medium;
+    padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+button:hover{
+    background-color: #05386b;
+    font-weight: bold;
+}
+
+@media(max-width: 600px){
+    .currency input {
+        width: 200px;
+    }
+}
