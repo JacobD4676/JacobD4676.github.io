@@ -10,6 +10,7 @@
 .nav-bar {
     list-style-type: none;
     display: flex;
+    margin: 1vw; /*vW is viewport width. */
 }
 
 .nav-bar-items {
@@ -43,7 +44,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4vh 0 0 0;
+    margin: 1vw; /*vW is viewport width. */
+    margin: 3vh; /*vH is viewport height. */
     padding: 0;
 }
 
@@ -67,10 +69,12 @@ h1 {
     display: flex;
     font-size: xx-large;
     justify-content: center;
+    margin: 1vw; /*vW is viewport width. */
 }
 
 p {
     display: flex;
     justify-content: center;
     font-size: larger;
+    margin: 1vw; /*vW is viewport width. */
 }

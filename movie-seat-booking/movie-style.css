@@ -10,6 +10,7 @@
 .nav-bar {
     list-style-type: none;
     display: flex;
+    margin: 1vw; /*vW is viewport width. */
 }
 
 .nav-bar-items { /*Class for list items (li)*/
