@@ -39,7 +39,7 @@ function populateUI(){ //Get data from localstorage in user's browser and popula
         });
     }
 
-    const selectedMovieIndex = localStorage.getItem("selectedMoveIndex");
+    const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
 
     if(selectedMovieIndex !== null){
         movieSelect.selectedIndex = selectedMovieIndex;

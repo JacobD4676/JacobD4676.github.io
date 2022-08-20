@@ -1,13 +1,76 @@
-/* Style sheet for Programming Portfolio */
+/* Style sheet for Portfolio */
 @charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
-html{
-    font-family:'Courier New', Courier, monospace;
-    background-color: rgb(221, 237, 250); 
+* {
+    box-sizing: border-box;
 }
 
-nav { /* Navigation bar */
-    text-align: center;
-    color:rgb(0, 0, 0);
+/*Navigation bar*/
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar-items {
+    float: left;
+    margin: 0 1vw 0 1vw;
+    font-size: medium;
+}
+
+.nav-bar-items a {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.nav-bar-items a:hover { /*Changes behavior of a link when user hovers over it*/
+    color: #6feaf6;
     font-weight: bold;
+}
+
+/*Body*/
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #242333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/*Project list*/
+.project-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 0 0 0;
+    padding: 0;
+}
+
+.project-items {
+    margin: 0 1vw 0 1vw;
+    font-size: large;
+}
+
+.project-items a {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.project-items a:hover { /*Changes behavior of a link when user hovers over it*/
+    color: #6feaf6;
+    font-weight: bold;
+}
+
+/*General HTML Tags*/
+h1 {
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
 }

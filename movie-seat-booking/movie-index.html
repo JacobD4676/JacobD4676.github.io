@@ -8,10 +8,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="movieAppStyle.css">
+    <link rel="stylesheet" href="movie-style.css">
     <title>Movie Seat Booking App</title>
 </head>
+<header>
+    <ul class="nav-bar">
+        <li class="nav-bar-items"><a href="/index.html">Home</a></li>
+        <li class="nav-bar-items"><a href="/about.html">About</a></li>
+        <li class="nav-bar-items"><a href="/projects.html">Projects</a></li>
+    </ul>
+</header>
+
 <body>
+<div class="app-container">
     <div class="movie-container">
         <label>Choose a movie:</label>
         <select id="movie">
@@ -107,7 +116,7 @@
     <p class="text">
         You have selected <span id="count">0</span> seats for a total price of <span id="dollarSign">$</span><span id="total">0</span> <!--Span tag is just used to hold the values for count, dollar sign, and total. Its value will change based on selection.-->
     </p>
-
-    <script src="MovieAppScript.js"></script>
+</div>
+<script src="movie-script.js"></script>
 </body>
 </html>

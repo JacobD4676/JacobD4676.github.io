@@ -1,19 +1,50 @@
+/* Style sheet for Movie Seat Booking App */
+@charset "ISO-8859-1";
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 * {
     box-sizing: border-box;
 }
 
-body{
+/*Navigation bar*/
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar-items { /*Class for list items (li)*/
+    float: left;
+    margin: 0 1vw 0 1vw;
+    font-size: medium;
+}
+
+.nav-bar-items a { /*Class for list items (li) a tags*/
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.nav-bar-items a:hover { /*Changes behavior of a link when user hovers over it*/
+    color: #6feaf6;
+    font-weight: bold;
+}
+
+/*Body*/
+body {
     background-color: #242333;
     color: #fff;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Movie Seat Book App */
+.app-container {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    font-family: "Lato", sans-serif;
-    margin: 0;
 }
 
 .movie-container {
