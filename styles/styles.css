@@ -64,17 +64,43 @@ body {
     font-weight: bold;
 }
 
+/*Course list*/
+.course-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw; /*vW is viewport width. */
+    margin: 3vh; /*vH is viewport height. */
+    padding: 0;
+}
+
+.course-items {
+    margin: 0 1vw 0 1vw;
+    font-size: large;
+}
+
+.course-items a {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+.course-items a:hover { /*Changes behavior of a link when user hovers over it*/
+    color: #6feaf6;
+    font-weight: bold;
+}
+
 /*General HTML Tags*/
 h1 {
     display: flex;
     font-size: xx-large;
     justify-content: center;
-    margin: 1vw; /*vW is viewport width. */
+    margin: 3vh 1vw 0 1vw; /*vW is viewport width. vH is viewport height. */
 }
 
 p {
     display: flex;
     justify-content: center;
     font-size: larger;
-    margin: 1vw; /*vW is viewport width. */
+    margin: 4vh 1vw 0 1vw; /*vW is viewport width. */
 }

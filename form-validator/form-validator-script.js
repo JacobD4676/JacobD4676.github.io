@@ -54,7 +54,9 @@ function checkLength(input, min, max){
 
 function checkPasswordsMatch(input1, input2){
     if(input1.value !== input2.value){
-        showError(input2, "Passwords do NOT match.");
+        showError(input2, "Passwords don't match.");
+    } else {
+        showSuccess(input2);
     }
 }
 
@@ -67,4 +69,4 @@ form.addEventListener("submit", function(e){ //"e" stands for event. It represen
     checkLength(password, 8, 20); //Checks length of password. Password must be at least 8 chars, but less than 20 chars.
     checkEmail(email); //Checks to see if email is valid.
     checkPasswordsMatch(password, password2); //Checks to see if passwords match one another.
-})
+});
