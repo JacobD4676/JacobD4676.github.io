@@ -27,6 +27,7 @@
 .nav-bar-items a:hover { /*Changes behavior of a link when user hovers over it*/
     color: #6feaf6;
     font-weight: bold;
+    transition: color .3s ease;
 }
 
 /*Body*/

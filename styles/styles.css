@@ -27,6 +27,7 @@
 .nav-bar-items a:hover { /*Changes behavior of a link when user hovers over it*/
     color: #6feaf6;
     font-weight: bold;
+    transition: color .3s ease;
 }
 
 /*Body*/
@@ -38,19 +39,20 @@ body {
     padding: 0;
 }
 
-/*Project list*/
+/*Project ul list*/
 .project-list {
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
     margin: 1vw; /*vW is viewport width. */
     margin: 3vh; /*vH is viewport height. */
     padding: 0;
 }
 
 .project-items {
-    margin: 0 1vw 0 1vw;
+    margin: 2vh 1vw 2vh 1vw;
     font-size: large;
 }
 
@@ -62,21 +64,30 @@ body {
 .project-items a:hover { /*Changes behavior of a link when user hovers over it*/
     color: #6feaf6;
     font-weight: bold;
+    transition: color .3s ease;
+}
+
+.project-description {
+    font-size: medium;
+    margin: 1vh 1vw 0 1vw;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
 }
 
 /*Course list*/
 .course-list {
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
     margin: 1vw; /*vW is viewport width. */
     margin: 3vh; /*vH is viewport height. */
     padding: 0;
 }
 
 .course-items {
-    margin: 0 1vw 0 1vw;
+    margin: 2vh 2vw 2vh 2vw;
     font-size: large;
 }
 
@@ -88,6 +99,22 @@ body {
 .course-items a:hover { /*Changes behavior of a link when user hovers over it*/
     color: #6feaf6;
     font-weight: bold;
+    transition: color .3s ease;
+}
+
+.course-overview {
+    font-size: larger;
+    font-weight: bold;
+    margin: 1vh 1vw 1vh 1vw;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
+}
+
+.course-description {
+    font-size: medium;
+    margin: 1vh 1vw 0 1vw;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
 }
 
 /*General HTML Tags*/
@@ -95,12 +122,13 @@ h1 {
     display: flex;
     font-size: xx-large;
     justify-content: center;
-    margin: 3vh 1vw 0 1vw; /*vW is viewport width. vH is viewport height. */
+    margin: 4vh 1vw 0 1vw; /*vW is viewport width. vH is viewport height. */
+    color: #6feaf6;
 }
 
 p {
     display: flex;
     justify-content: center;
     font-size: larger;
-    margin: 4vh 1vw 0 1vw; /*vW is viewport width. */
+    margin: 2vh 1vw 2vh 1vw; /*vW is viewport width. vH is viewport height. */
 }

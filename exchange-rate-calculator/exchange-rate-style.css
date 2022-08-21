@@ -31,6 +31,7 @@
 .nav-bar-items a:hover { /*Changes behavior of a link when user hovers over it*/
     color: rgb(0, 0, 0);
     font-weight: bold;
+    transition: color .3s ease;
 }
 
 /*Body*/
@@ -116,6 +117,7 @@ select:focus, input:focus, button:focus{
 button:hover{
     background-color: #05386b;
     font-weight: bold;
+    transition: background-color .3s ease;
 }
 
 @media(max-width: 600px){
