@@ -1,4 +1,4 @@
-# jdoug7280.github.io
+# JacobD4676.github.io
 Welcome to my programming portfolio! Thanks for stopping by.
 This portfolio is being deployed for educational/learning purposes. Feel free to reuse any code in this respository; we can learn together!
 
