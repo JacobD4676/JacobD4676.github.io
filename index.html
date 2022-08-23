@@ -1,24 +1,164 @@
+<!--Index/Home page created by following alongside the course "HTML, CSS, and JavaScript. Build 10 Big and Complete Responsive Websites with HTML, CSS, and JavaScript" by Code And Create on Udemy.com -->
+<!--Course Link: udemy.com/course/10-mega-responsive-websites-with-html-css-and-javascript/ -->
+<!--Special thanks to Code And Create for their awesome course! -->
+<!--This project is being deployed for educational/learning purposes. -->
+<!--Website background image downloaded from Kimura2 on Pixabay.com. Link: https://pixabay.com/photos/mountain-volcano-peak-summit-477832/ -->
+<!--Movie ticket image downloaded from Igorovsyannykov on Pixabay.com. Link: https://pixabay.com/photos/ticket-coupon-admission-carnival-2974645/ -->
+<!--Registration image downloaded from Geralt on Pixabay.com. Link: https://pixabay.com/photos/registration-log-in-keyboard-hand-3938434/ -->
+<!--Budget image downloaded from Stevepb on Pixabay.com. Link: https://pixabay.com/photos/coins-calculator-budget-1015125/ -->
+<!--Exchange rate image downloaded from PhotoMIX-Company on Pixabay.com. Link: https://pixabay.com/photos/european-union-brexit-exchange-rates-1493894/ -->
+<!--Under construction image downloaded from Michael_Luenen on Pixabay.com. Link: https://pixabay.com/photos/construction-site-website-1561769/ -->
+<!--GitHub Logo downloaded from https://github.com/logos -->
+<!--Avatar downloaded from https://getavataaars.com/-->
 <!DOCTYPE html>
-<!--Home page for programming portfolio.-->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio - Home</title>
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-        <link rel="icon" href="images/icon.ico" type="image/x-icon">
-   </head>
-   <header>
-    <ul class="nav-bar">
-        <li class="nav-bar-items"><a href="/about.html">About</a></li>
-        <li class="nav-bar-items"><a href="/projects.html">Projects</a></li>
-    </ul>
-   </header>
-   
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <link rel="icon" href="images/icon.ico" type="image/x-icon">
+  <title>My Programming Portfolio</title>
+</head>
 <body>
-    <h1>Hello!</h1>
-    <p>This is my programming portfolio overview hosted on GitHub Pages. Thanks for stopping by!</p>
+
+    <div class="container">
+        <!--Section 1-->
+        <section class="section1 center" id="section1">
+            <h1 class="section1-heading">
+                Aspiring Software Engineer
+            </h1>
+            <img src="images/avatar.png" alt="A picture of my animated avatar." class="avatar"/>
+            <h3 class="person-name">Jacob D.</h3>
+            <a href="#section3" class="section1-btn">Projects</a>
+        </section>
+
+        <!--Nav Bar-->
+        <nav class="navbar center">
+            <a href="#section1" class="navbar-link">Home</a>
+            <a href="#section2" class="navbar-link">About</a>
+            <a href="#section3" class="navbar-link">Portfolio</a>
+        </nav>
+
+        <!--Section 2-->
+        <section class="section2" id="section2">
+            <h1 class="section2-heading">About Me</h1>
+            
+            <ul class="course-list">
+                <p class="course-overview">Awesome Udemy courses I've recently taken: </p>
+                <li class="course-items">
+                    <a href="https://www.udemy.com/course/data-structures-and-algorithms-java/">Data Structures & Algorithms - Java</a>
+                    <p class="course-description">Key course highlights: Big O notation, data structures (including Linked Lists, Stacks & Queues, Binary Trees, Graphs), algorithms (including Bubble Sort, Merge Sort, Recursion, Tree Traversal).</p>
+                </li>
+                <li class="course-items">
+                    <a href="https://www.udemy.com/course/web-projects-with-vanilla-javascript/">20 Web Projects With Vanilla JavaScript</a>
+                    <p class="course-description">Key course highlights: HTML, CSS, DOM (selection/manipulation), JavaScript fundamentals (including events, Fetch API, JSON, localStorage).</p>
+                </li>
+                <li class="course-items">
+                    <a href="https://www.udemy.com/course/api-and-web-service-introduction/">API & Web Service Introduction</a>
+                    <p class="course-description">Key course highlights: APIs, HTTP methods, JSON, SOAP vs. REST, OAuth, OpenID Connect (OIDC), Postman, Microservices.</p>
+                </li>
+                <li class="course-items">
+                    <a href="https://www.udemy.com/course/postman-crash-course-for-beginners-learn-rest-api-testing/">Intro to Postman and API Testing</a>
+                    <p class="course-description">Key course highlights: APIs, HTTP methods, JSON, Postman, query parameters, API testing.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!--Section 3-->
+        <section class="section3" id="section3">
+            <h1 class="section3-heading">My Projects</h1>
+            <div class="projects-wrapper center">
+                <div class="project">
+                  <div class="project-text">
+                    <h2 class="project-name">Movie Seat Booking App</h2>
+                    <h4 class="project-technologies">HTML / CSS / JS</h4>
+                  </div>
+                  <img src="images/MovieSeat.jpg" class="project-img" />
+                  <a
+                    href="movie-seat-booking/movie-index.html"
+                    class="project-link"
+                    target="_blank"
+                    >Explore Project</a>
+                </div>
+                <div class="project">
+                  <div class="project-text">
+                    <h2 class="project-name">Form Validator App</h2>
+                    <h4 class="project-technologies">HTML / CSS / JS</h4>
+                  </div>
+                  <img src="images/FormValidator.jpg" class="project-img" />
+                  <a
+                    href="form-validator/form-validator-index.html"
+                    class="project-link"
+                    target="_blank"
+                    >Explore Project</a>
+                </div>
+                <div class="project">
+                  <div class="project-text">
+                    <h2 class="project-name">Exchange Rate Calculator</h2>
+                    <h4 class="project-technologies">HTML / CSS / JS</h4>
+                  </div>
+                  <img src="images/ExchangeRate.jpg" class="project-img" />
+                  <a
+                    href="exchange-rate-calculator/exchange-rate-index.html"
+                    class="project-link"
+                    target="_blank"
+                    >Explore Project</a>
+                </div>
+                <div class="project">
+                  <div class="project-text">
+                    <h2 class="project-name">Expense Tracker App</h2>
+                    <h4 class="project-technologies">HTML / CSS / JS</h4>
+                  </div>
+                  <img src="images/ExpenseTracker.jpg" class="project-img" />
+                  <a
+                    href="expense-tracker-app/expense-tracker-index.html"
+                    class="project-link"
+                    target="_blank"
+                    >Explore Project</a>
+                </div>
+                <div class="project">
+                  <div class="project-text">
+                    <h2 class="project-name">Uh-Oh!</h2>
+                    <h4 class="project-technologies">Project not yet available.</h4>
+                  </div>
+                  <img src="images/UnderConstruction.jpg" class="project-img" />
+                  <a
+                    href="#"
+                    class="project-link"
+                    target=""
+                    >Check back soon!</a>
+                </div>
+                <div class="project">
+                  <div class="project-text">
+                    <h2 class="project-name">Uh-Oh!</h2>
+                    <h4 class="project-technologies">Project not yet available.</h4>
+                  </div>
+                  <img src="images/UnderConstruction.jpg" class="project-img" />
+                  <a
+                    href="#"
+                    class="project-link"
+                    target=""
+                    >Check back soon!</a>
+                </div>
+              </div>
+        </section>
+
+        <!--Section 4 - Footer-->
+        <footer class="section4" id="section4">
+            <div class="social-media">
+                <a href="https://github.com/jdoug7280" class="social-media-link" target="_blank">
+                    <img src="images/GitHubLogo.png" alt="GitHub Logo">
+                </a>
+            </div>
+            <p class="release-date">
+                Created August 2022. Last updated August 2022.
+            </p>
+        </footer>
+
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
