@@ -42,6 +42,14 @@ body {
     padding: 0;
 }
 
+/* Project Description */
+.project-description {
+    font-size: large;
+    margin: 1vh 1vw 1vh 1vw;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
+}
+
 /* Exchange Rate App */
 .app-container {
     margin: 5vh 25vw 5vh 25vw;
@@ -54,10 +62,6 @@ body {
 
 h1 {
     color: var(--primary-color);
-}
-
-p {
-    text-align: center;
 }
 
 .btn {
