@@ -1,0 +1,44 @@
+<!--Created by following alongside the course "20 Web Projects With Vanilla JavaScript" by Brad Traversy on Udemy.com -->
+<!--Course Link: udemy.com/course/web-projects-with-vanilla-javascript/ -->
+<!--Special thanks to Brad for his awesome course! -->
+<!--This project is being deployed for educational/learning purposes. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="infinite-scroll-posts-style.css">
+    <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/icon.ico" type="image/x-icon"> 
+    <title>My Infinite Scroll Posts Blog App</title>
+</head>
+<header>
+    <ul class="nav-bar">
+        <li class="nav-bar-items"><a href="/index.html#section1">Home</a></li>
+        <li class="nav-bar-items"><a href="/index.html#section2">About</a></li>
+        <li class="nav-bar-items"><a href="/index.html#section3">Portfolio</a></li>
+    </ul>
+</header>
+
+<body>
+    <p class="project-description">Key JS highlights: fetches data from a REST API (https://jsonplaceholder.typicode.com) to display fake blog posts, allows infinite scrolling by automatically getting additional posts from the API once the user has reached the bottom of the page, and allows user to filter posts by term.</p>
+    <div class="app-container">
+        <h1>My "JSONPlaceholder" Blog</h1>
+
+        <div class="filter-container">
+            <input type="text" id="filter" class="filter" placeholder="Filter posts...">
+        </div>
+
+        <div id="posts-container"></div> <!--post-container is an empty div since posts will be added via JS.-->
+            
+        <div class="loader"> <!--CSS animation loader-->
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <script src="infinite-scroll-posts-script.js"></script>
+</body>
+</html>
