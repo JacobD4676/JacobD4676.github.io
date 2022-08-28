@@ -1,0 +1,132 @@
+/* Style sheet for Crypto Price Tracker App */
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap"); /*Import Lato font from Google Fonts */
+
+:root {
+   --primary-color: #240090; /*Var declaration & initialization*/
+   --secondary-color: rgb(0, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Navigation bar*/
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    margin: 1vw; /*vW is viewport width. */
+}
+
+.nav-bar-items { /*Class for list items (li)*/
+    float: left;
+    margin: 0 1vw 0 1vw;
+    font-size: medium;
+}
+
+.nav-bar-items a { /*Class for list items (li) a tags*/
+    color: var(--primary-color);
+    font-family: "Lato", sans-serif;
+}
+
+.nav-bar-items a:hover { /*Changes behavior of a link when user hovers over it*/
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+/*Body*/
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Project Description */
+.project-description {
+    font-size: large;
+    margin: 1vh 1vw 1vh 1vw;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
+}
+
+/* Crypto Price Tracker App */
+.app-container {
+    margin: 2.5vh 10vw 2.5vh 10vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 1vh 0 2vh 0;
+    padding: 0;
+}
+
+.cryptocurrency-list { /* Container class for unordered list (ul) */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh 1vw 1vh 1vw;
+    padding: 0;
+}
+
+.cryptocurrency-list:hover li { /* Hides all other items in the list except the one being hovered over. Works in conjunction with next block of code. */
+    opacity: 0.20;
+}
+
+.cryptocurrency-list li:hover { /* Works in conjunction with above block of code. */
+    opacity: 1;
+    scale: 110%;
+    transition: scale 0.3s ease;
+}
+
+.cryptocurrency {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: rgba(196, 197, 197, 0.25); /* Default color. Only shows if no percent change. */
+    padding: 1vh 1vw;
+    width: 250px;
+    height: 125px;
+    flex: auto;
+}
+
+.name {
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    margin: 0 0 2vh 0; /* Add 1vh of margin to below name */
+}
+
+.price {
+    font-size: large;
+}
+
+.percent-change {
+    font-size: large;
+}
+
+.coingecko {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.coingecko-logo {
+    width: 300px;
+    height: 75px;
+}

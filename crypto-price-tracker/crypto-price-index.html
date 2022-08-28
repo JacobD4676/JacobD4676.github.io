@@ -1,0 +1,191 @@
+<!--Crypto Price Tracker App-->
+<!--Built using the CoinGecko API (free version). Special thanks to CoinGecko! Link: https://api.coingecko.com/api/v3/-->
+<!--CoinGecko Logo downloaded from CoinGecko.com. Logo is used for attribution purposes.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crypto-price-styles.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <title>Cryptocurrency Price Tracker App</title>
+</head>
+<header>
+    <ul class="nav-bar">
+        <li class="nav-bar-items"><a href="/index.html#section1">Home</a></li>
+        <li class="nav-bar-items"><a href="/index.html#section2">About</a></li>
+        <li class="nav-bar-items"><a href="/index.html#section3">Portfolio</a></li>
+    </ul>
+</header>
+
+<body> 
+    <p class="project-description">Key JS highlights: fetches data from an API (https://api.coingecko.com/api/v3/) in real-time to display current cryptocurrency prices.</p>
+    <div class="app-container">
+        <h1>Current Crypto Prices</h1>
+        <h4>View the real-time price of any of the top 25 cryptos (excludes stable coins).</h4>
+        <ul class="cryptocurrency-list" id="cryptocurrency-list">
+
+            <li class="cryptocurrency" id="bitcoin" value="bitcoin">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="ethereum" value="ethereum">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="binancecoin" value="binancecoin">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="ripple" value="ripple">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="cardano" value="cardano">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="solana" value="solana">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="dogecoin" value="dogecoin">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="polkadot" value="polkadot">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="shiba-inu" value="shiba-inu">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="avalanche-2" value="avalanche-2">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="matic-network" value="matic-network">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="tron" value="tron">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="uniswap" value="uniswap">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+        <!--FIX: Commenting out for now since not working properly (no data being returned).
+            <li class="cryptocurrency" id="unus-sed-leo" value="unus-sed-leo">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+        -->
+
+            <li class="cryptocurrency" id="ethereum-classic" value="ethereum-classic">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="litecoin" value="litecoin">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="cosmos" value="cosmos">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="ftx-token" value="ftx-token">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="chainlink" value="chainlink">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="near" value="near">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="crypto-com-chain" value="crypto-com-chain">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="stellar" value="stellar">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="monero" value="monero">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="bitcoin-cash" value="bitcoin-cash">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+            <li class="cryptocurrency" id="flow" value="flow">
+                <div class="name" id="name" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="price" id="price" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+                <div class="percent-change" id="percent-change" value="Something went wrong. Please try again later.">Something went wrong. Please try again later.</div>
+            </li>
+
+        </ul>
+
+        <div class="coingecko">
+            <h4>Built using the CoinGecko API (free version).</h4>
+            <img src="images/CoinGeckoLogo.png" alt="CoinGecko Logo" class="coingecko-logo" />
+        </div>
+        
+    </div>
+<script src="crypto-price-script.js"></script>
+</body>
+</html>
