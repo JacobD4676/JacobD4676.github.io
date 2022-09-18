@@ -96,9 +96,11 @@ html {
 }
 
 .section1-btn:hover {
-    scale: 120%;
     font-weight: bold;
-    transition: scale 0.3s ease;
+    color: #fff;
+    background-color: var(--primaryColor);
+    scale: 120%;
+    transition: all 0.3s ease;
 }
 
 /* Nav Bar */
@@ -154,14 +156,19 @@ html {
 }
 
 .section2-heading {
-    margin: 12.5rem 0 12.5rem 0;
+    margin-top: 10vh;
     font-size: 5rem;
     color: #333;
     letter-spacing: 0.5rem;
     border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+    text-shadow: 0.2rem 0.2rem 0.3rem #555;
 }
 
+.section2-body {
+    margin: 3vh 5vw 0 5vw;
+    font-size: 2.5rem;
+    color: #333;
+}
 
 /*Course list*/
 .course-list {
@@ -170,14 +177,13 @@ html {
     flex-direction: column;
     justify-content: space-evenly; /*Horizontal alignment. */
     align-items: left; /*Vertical alignment. */
-    margin: 0; /*vW is viewport width. */
-    margin: 0; /*vH is viewport height. */
+    margin: 5vh 0; /*vW is viewport width. vH is viewport height. */
     padding: 0;
 }
 
 .course-items {
     margin: 2vh 2vw 2vh 2vw;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 .course-items a {
@@ -193,7 +199,7 @@ html {
 }
 
 .course-overview {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 0 1vw 1vh 1vw;
     justify-content: left; /*Horizontal alignment. */
@@ -308,7 +314,7 @@ html {
 }
 
 /* Section 4 - Footer */
-.section4{
+.section4 {
     width: 100%;
     height: 30vh;
     background-color: #222;

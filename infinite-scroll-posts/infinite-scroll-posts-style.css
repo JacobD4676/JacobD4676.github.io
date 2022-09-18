@@ -42,6 +42,15 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+/* Project Description */
+.project-description {
+    font-size: large;
+    font-weight: bolder;
+    margin: 1vh 1vw 1vh 1vw;
+    justify-content: left; /*Horizontal alignment. */
+    align-items: left; /*Vertical alignment. */
+}
+
 /* Infinite Scroll Posts Blog */
 .app-container {
     display: flex;
