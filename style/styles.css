@@ -149,7 +149,7 @@ html {
 /* Section 2 */
 .section2 {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -228,7 +228,7 @@ html {
 /* Section 3 */
 .section3 {
     width: 100%;
-    height: 120vh;
+    height: auto;
     padding: 10rem 0;
     background-color: #EDF5E1;
     display: flex;
@@ -332,11 +332,10 @@ html {
 }
 
 .social-media {
-    margin-bottom: 5rem;
+    margin: 4rem;
 }
 
 .social-media-link {
-    margin: 0 2rem;
     padding: 0.7rem;
     background-color: var(--primaryColor);
     border-radius: 1rem;
@@ -368,6 +367,33 @@ html {
 
 /* Responsive Window Sizing using @media(max-width: ) */
 
+@media(max-width: 1280px){
+    html {
+        font-size: 12px;
+    }
+
+    .section1-heading {
+        width: 90vw;
+        text-shadow: .2rem .2rem 0.4rem #555;
+    }
+
+    .navbar-link {
+        margin: 0 1.5rem;
+    }
+
+    .section2-heading {
+        margin: 7.5rem 1.5rem 1.5rem 1.5rem;
+        text-align: center;
+    }
+
+    .section2-body {
+        margin: 1.5rem;
+        width: 90vw;
+        font-size: 2.5rem;
+        color: #333;
+    }
+}
+
 @media(max-width: 1024px){ /* iPad Pro Width */
     html {
         font-size: 12px;
@@ -382,10 +408,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 100vh;
-    }
-
     .section2-heading {
         margin: 7.5rem 1.5rem 1.5rem 1.5rem;
         text-align: center;
@@ -396,10 +418,6 @@ html {
         width: 90vw;
         font-size: 2.5rem;
         color: #333;
-    }
-
-    .section3 {
-        height: 200vh;
     }
 }
 
@@ -418,10 +436,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 100vh;
-    }
-
     .section2-heading {
         margin: 7.5rem 1.5rem 1.5rem 1.5rem;
         text-align: center;
@@ -432,10 +446,6 @@ html {
         width: 90vw;
         font-size: 2.5rem;
         color: #333;
-    }
-
-    .section3 {
-        height: 195vh;
     }
 }
 
@@ -453,10 +463,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 125vh;
-    }
-
     .section2-heading {
         margin: 10rem 1.5rem 1.5rem 1.5rem;
         text-align: center;
@@ -467,10 +473,6 @@ html {
         width: 90vw;
         font-size: 2.5rem;
         color: #333;
-    }
-
-    .section3 {
-        height: 250vh;
     }
 }
 
@@ -488,10 +490,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 130vh;
-    }
-
     .section2-heading {
         margin: 10rem 1rem 1rem 1rem;
         text-align: center;
@@ -502,10 +500,6 @@ html {
         width: 90vw;
         font-size: 2.5rem;
         color: #333;
-    }
-
-    .section3 {
-        height: 260vh;
     }
 }
 
@@ -523,10 +517,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 125vh;
-    }
-
     .section2-heading {
         margin: 10rem 1rem 1rem 1rem;
         text-align: center;
@@ -537,10 +527,6 @@ html {
         width: 90vw;
         font-size: 2.5rem;
         color: #333;
-    }
-
-    .section3 {
-        height: 225vh;
     }
 }
 
@@ -558,10 +544,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 120vh;
-    }
-
     .section2-heading {
         margin: 10rem 1rem 1rem 1rem;
         text-align: center;
@@ -572,10 +554,6 @@ html {
         width: 90vw;
         font-size: 2.5rem;
         color: #333;
-    }
-
-    .section3 {
-        height: 200vh;
     }
 }
 
@@ -593,10 +571,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 135vh;
-    }
-
     .section2-heading {
         margin: 10rem 1rem 1rem 1rem;
         text-align: center;
@@ -607,10 +581,6 @@ html {
         width: 90vw;
         font-size: 2.5rem;
         color: #333;
-    }
-
-    .section3 {
-        height: 215vh;
     }
 }
 
@@ -629,10 +599,6 @@ html {
         margin: 0 1.5rem;
     }
 
-    .section2 {
-        height: 170vh;
-    }
-
     .section2-heading {
         margin: 7.5rem 1rem 1rem 1rem;
         text-align: center;
@@ -645,11 +611,7 @@ html {
         color: #333;
     }
 
-    .section3 {
-        height: 270vh;
-    }
-
     .section4 {
-        height: 27.5vh;
+        height: auto;
     }
 }
