@@ -33,10 +33,10 @@ html {
 .section1 {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.3)), url(/images/mountains.jpg) center no-repeat;
+    background: url(/images/mountains.jpg) repeat-x;
     background-size: cover;
+    overflow: hidden;
+    animation: movingBackground 300s linear infinite;
     flex-direction: column;
 }
 
@@ -169,6 +169,10 @@ html {
     margin: 3vh 5vw 0 5vw;
     font-size: 2.5rem;
     color: #333;
+}
+
+.section2-body-intro {
+    margin-bottom: 2vh;
 }
 
 /*Course list*/
@@ -332,7 +336,7 @@ html {
 }
 
 .social-media {
-    margin: 4rem;
+    margin: 3rem;
 }
 
 .social-media-link {
@@ -363,6 +367,18 @@ html {
     letter-spacing: 0.2rem;
     font-weight: 300;
     text-align: center;
+    margin: 2rem;
+}
+
+/* Animations */
+@keyframes movingBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -500vw 0; /* -500vw is -5 * current vw (100% of current screen width). Repeats background image 5 times. "-" to move screen from right to left. */
+    }
 }
 
 /* Responsive Window Sizing using @media(max-width: ) */
