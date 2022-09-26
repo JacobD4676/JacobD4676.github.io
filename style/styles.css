@@ -4,6 +4,7 @@
 
 :root{
     --primaryColor: #54c687;
+    --backgroundColor: rgb(247, 247, 247, 0.90);
 }
 
 /* Reset and Common Styles */
@@ -47,10 +48,10 @@ html {
     color: #fff;
     background-color: var(--primaryColor);
     padding: 2rem;
-    margin-bottom: 5rem;
+    margin: 5rem;
     letter-spacing: 1rem;
-    border-bottom: .3rem solid #fff;
-    text-shadow: .2rem .2rem 0.5rem #555;
+    border-bottom: .5rem solid var(--backgroundColor);
+    text-shadow: .2rem .2rem 0.5rem rgb(0, 0, 0);
     transform: skew(-10deg);
 }
 
@@ -79,7 +80,7 @@ html {
     font-size: 2rem;
     color: #fff;
     background-color: var(--primaryColor);
-    margin: 5rem 0;
+    margin: 2.5rem;
     padding: 0.5rem 3rem;
     letter-spacing: 0.3rem;
     transform: skew(-10deg);
@@ -89,9 +90,10 @@ html {
     font-size: 1.7rem;
     font-weight: 700;
     color: #333;
-    background-color: #fff;
+    background-color: var(--backgroundColor);
     border: 0.3rem solid #333;
     padding: 0.5rem 1rem;
+    margin: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
@@ -150,7 +152,7 @@ html {
 .section2 {
     width: 100%;
     height: auto;
-    background-color: #fff;
+    background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +164,7 @@ html {
     color: #333;
     letter-spacing: 0.5rem;
     border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.3rem #555;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
 }
 
 .section2-body {
@@ -172,7 +174,12 @@ html {
 }
 
 .section2-body-intro {
-    margin-bottom: 2vh;
+    margin-bottom: 2.5vh;
+}
+
+.text-emphasize {
+    color: var(--primaryColor);
+    font-weight: bold;
 }
 
 /*Course list*/
@@ -182,8 +189,9 @@ html {
     flex-direction: column;
     justify-content: space-evenly; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
-    margin: 5vh 0; /*vW is viewport width. vH is viewport height. */
-    padding: 0;
+    margin: 5vh 2vw; /*vW is viewport width. vH is viewport height. */
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.9rem #777;
 }
 
 .course-items-container {
@@ -211,7 +219,7 @@ html {
     width: 90vw;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 1vh 0;
+    margin: 1vh 2vw;
     justify-content: center; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
     text-align: center;
@@ -234,7 +242,7 @@ html {
     width: 100%;
     height: auto;
     padding: 10rem 0;
-    background-color: #EDF5E1;
+    background-color: var(--backgroundColor);
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -246,7 +254,7 @@ html {
     letter-spacing: 0.5rem;
     margin-bottom: 3rem;
     border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
 }
 
 .projects-wrapper {
@@ -260,7 +268,7 @@ html {
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    background-color: #fff;
+    background-color: var(--backgroundColor);
     box-shadow: 0.3rem 0.3rem 0.5rem #777;
     position: relative;
     overflow: hidden;
@@ -313,7 +321,7 @@ html {
     letter-spacing: 0.1rem;
     border: 0.3rem solid var(--primaryColor);
     padding: 0 1rem;
-    background-color: #fff;
+    background-color: var(--backgroundColor);
     position: absolute;
     bottom: -5rem;
     transition: bottom 0.3s;
@@ -327,7 +335,7 @@ html {
 /* Section 4 - Footer */
 .section4 {
     width: 100%;
-    height: 25vh;
+    height: auto;
     background-color: #222;
     display: flex;
     flex-direction: column;
@@ -336,7 +344,7 @@ html {
 }
 
 .social-media {
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .social-media-link {
@@ -382,7 +390,6 @@ html {
 }
 
 /* Responsive Window Sizing using @media(max-width: ) */
-
 @media(max-width: 1280px){
     html {
         font-size: 12px;
@@ -390,7 +397,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -417,7 +424,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -445,7 +452,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -472,7 +479,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -499,7 +506,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -526,7 +533,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -553,7 +560,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -580,7 +587,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -608,7 +615,7 @@ html {
     .section1-heading {
         margin: 5rem 0;
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem #555;
+        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
     }
 
     .navbar-link {
@@ -626,8 +633,10 @@ html {
         font-size: 2.5rem;
         color: #333;
     }
+}
 
-    .section4 {
+@media(max-height: 850px){
+    .section1 {
         height: auto;
     }
 }
