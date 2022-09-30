@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap"); /*Import Lato font from Google Fonts */
 
 :root{
+    /* Variables */
     --primaryColor: #54c687;
+    --secondaryColor: #54c6c0;
     --backgroundColor: rgb(247, 247, 247, 0.90);
 }
 
@@ -51,7 +53,7 @@ html {
     margin: 5rem;
     letter-spacing: 1rem;
     border-bottom: .5rem solid var(--backgroundColor);
-    text-shadow: .2rem .2rem 0.5rem rgb(0, 0, 0);
+    text-shadow: .2rem .2rem 0.5rem rgb(60, 60, 60);
     transform: skew(-10deg);
 }
 
@@ -102,7 +104,7 @@ html {
     font-weight: bold;
     color: #fff;
     background-color: var(--primaryColor);
-    scale: 120%;
+    scale: 110%;
     transition: all 0.3s ease;
 }
 
@@ -135,7 +137,7 @@ html {
 
 .navbar-link:hover {
     content: "";
-    scale: 120%;
+    scale: 110%;
     color: #fff;
     font-weight: bold;
     transition: scale 0.3s ease;
@@ -143,7 +145,7 @@ html {
 
 .change.navbar-link::before {
     color: #fff;
-    scale: 120%;
+    scale: 110%;
     font-weight: bold;
     transition: scale 0.3s 0.3s ease;
 }
@@ -164,7 +166,7 @@ html {
     color: #333;
     letter-spacing: 0.5rem;
     border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(60, 60, 60);
 }
 
 .section2-body {
@@ -178,8 +180,67 @@ html {
 }
 
 .text-emphasize {
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
     font-weight: bold;
+}
+
+/*Skills list*/
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    margin: 3vh 2vw; /*vW is viewport width. vH is viewport height. */
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.9rem #777;
+}
+
+.skills-items-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5vw;
+    list-style-type: none;
+}
+
+.skills-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    margin: 2vh 3vw;
+    padding: 2vh 3vw;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.9rem #777;
+}
+
+.skills-items img {
+    width: 9rem;
+}
+
+.skills-items img:hover {
+    scale: 110%;
+    transition: scale 0.3s ease;
+}
+
+.skills-items p {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-top: 2vh;
+}
+
+.skills-overview {
+    width: 90vw;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.5vh 2vw;
+    justify-content: center; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    text-align: center;
+    color: #fff;
+    background-color: var(--secondaryColor);
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
 }
 
 /*Course list*/
@@ -189,7 +250,7 @@ html {
     flex-direction: column;
     justify-content: space-evenly; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
-    margin: 5vh 2vw; /*vW is viewport width. vH is viewport height. */
+    margin: 3vh 2vw; /*vW is viewport width. vH is viewport height. */
     border-radius: 3rem;
     box-shadow: 0.3rem 0.3rem 0.9rem #777;
 }
@@ -219,12 +280,12 @@ html {
     width: 90vw;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 1vh 2vw;
+    margin: 1.5vh 2vw;
     justify-content: center; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
     text-align: center;
     color: #fff;
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     padding: 0.5rem 3rem;
     letter-spacing: 0.3rem;
     transform: skew(-10deg);
@@ -232,7 +293,7 @@ html {
 
 .course-description {
     font-size: 2rem;
-    margin: 1vh 1vw 0 1vw;
+    margin: 1vh 1vw 1vh 1vw;
     justify-content: left; /*Horizontal alignment. */
     align-items: left; /*Vertical alignment. */
 }
@@ -254,7 +315,7 @@ html {
     letter-spacing: 0.5rem;
     margin-bottom: 3rem;
     border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(60, 60, 60);
 }
 
 .projects-wrapper {
@@ -360,7 +421,7 @@ html {
     background-color: var(--primaryColor);
     border-radius: 1rem;
     display: inline-block;
-    scale: 120%;
+    scale: 110%;
     transition: scale 0.3s ease;
 }
 
@@ -397,7 +458,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -424,7 +485,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -452,7 +513,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -479,7 +540,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -506,7 +567,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -533,7 +594,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -560,7 +621,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -587,7 +648,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -615,7 +676,7 @@ html {
     .section1-heading {
         margin: 5rem 0;
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
