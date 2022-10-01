@@ -4,9 +4,9 @@
 
 :root{
     /* Variables */
-    --primaryColor: #54c687;
-    --secondaryColor: #54c6c0;
-    --backgroundColor: rgb(247, 247, 247, 0.90);
+    --primaryColor: #4cbd7f;
+    --secondaryColor: #2fa7a1;
+    --backgroundColor: rgba(245, 245, 245, 0.92);
 }
 
 /* Reset and Common Styles */
@@ -52,7 +52,7 @@ html {
     padding: 2rem;
     margin: 5rem;
     letter-spacing: 1rem;
-    border-bottom: .5rem solid var(--backgroundColor);
+    border-bottom: .2rem solid var(--backgroundColor);
     text-shadow: .2rem .2rem 0.5rem rgb(60, 60, 60);
     transform: skew(-10deg);
 }
@@ -121,6 +121,8 @@ html {
 .sticky {
     position: fixed;
     top: 0;
+    background-color: var(--secondaryColor);
+    transition: all 0.3s ease;
 }
 
 .navbar-link {
@@ -147,7 +149,7 @@ html {
     color: #fff;
     scale: 110%;
     font-weight: bold;
-    transition: scale 0.3s 0.3s ease;
+    transition: scale 0.3s ease;
 }
 
 /* Section 2 */
@@ -198,7 +200,8 @@ html {
 .skills-items-container {
     display: flex;
     flex-direction: row;
-    margin: 0 5vw;
+    flex-wrap: wrap;
+    margin: 0 3vw;
     list-style-type: none;
 }
 
@@ -207,14 +210,14 @@ html {
     flex-direction: column;
     justify-content: center; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
-    margin: 2vh 3vw;
+    margin: 3vh 2.5vw;
     padding: 2vh 3vw;
     border-radius: 3rem;
     box-shadow: 0.3rem 0.3rem 0.9rem #777;
 }
 
 .skills-items img {
-    width: 9rem;
+    width: 8rem;
 }
 
 .skills-items img:hover {
@@ -256,11 +259,11 @@ html {
 }
 
 .course-items-container {
-    margin: 0 5vw;
+    margin: 0 3vw;
 }
 
 .course-items {
-    margin: 2vh 0;
+    margin: 3vh 2.5vw;
     font-size: 2.25rem;
 }
 
@@ -271,7 +274,7 @@ html {
 }
 
 .course-items a:hover { /*Changes behavior of a link when user hovers over it*/
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
     font-weight: bold;
     transition: color .3s ease;
 }
@@ -333,7 +336,7 @@ html {
     box-shadow: 0.3rem 0.3rem 0.5rem #777;
     position: relative;
     overflow: hidden;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s ease;
 }
   
 .project:hover {
@@ -346,12 +349,12 @@ html {
     position: absolute;
     top: -10rem;
     z-index: 10;
-    transition: top 0.3s;
+    transition: top 0.3s ease;
 }
   
 .project:hover .project-text {
     top: 5rem;
-    transition: top 0.3s 0.3s;
+    transition: top 0.3s ease;
 }
   
 .project-name {
@@ -363,12 +366,12 @@ html {
   
 .project-technologies {
     font-size: 2rem;
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
 }
   
 .project-img {
     width: 40rem;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
 }
   
 .project:hover .project-img {
@@ -380,17 +383,25 @@ html {
     font-weight: 500;
     color: #333;
     letter-spacing: 0.1rem;
-    border: 0.3rem solid var(--primaryColor);
+    border: 0.3rem solid var(--secondaryColor);
     padding: 0 1rem;
     background-color: var(--backgroundColor);
     position: absolute;
     bottom: -5rem;
-    transition: bottom 0.3s;
+    transition: bottom 0.3s ease;
 }
   
 .project:hover .project-link {
     bottom: 5rem;
-    transition: bottom 0.3s 0.3s;
+    transition: bottom 0.3s ease;
+}
+
+.project-link:hover {
+    font-weight: bold;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    scale: 110%;
+    transition: all 0.3s ease;
 }
 
 /* Section 4 - Footer */
@@ -410,17 +421,12 @@ html {
 
 .social-media-link {
     padding: 0.7rem;
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     border-radius: 1rem;
     display: inline-block;
 }
 
 .social-media-link:hover {
-    margin: 0 2rem;
-    padding: 0.7rem;
-    background-color: var(--primaryColor);
-    border-radius: 1rem;
-    display: inline-block;
     scale: 110%;
     transition: scale 0.3s ease;
 }
