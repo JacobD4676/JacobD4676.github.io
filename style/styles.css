@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap"); /*Import Lato font from Google Fonts */
 
 :root{
-    --primaryColor: #54c687;
-    --backgroundColor: rgb(247, 247, 247, 0.90);
+    /* Variables */
+    --primaryColor: #4cbd7f;
+    --secondaryColor: #2fa7a1;
+    --backgroundColor: rgba(245, 245, 245, 0.92);
 }
 
 /* Reset and Common Styles */
@@ -50,8 +52,8 @@ html {
     padding: 2rem;
     margin: 5rem;
     letter-spacing: 1rem;
-    border-bottom: .5rem solid var(--backgroundColor);
-    text-shadow: .2rem .2rem 0.5rem rgb(0, 0, 0);
+    border-bottom: .2rem solid var(--backgroundColor);
+    text-shadow: .2rem .2rem 0.5rem rgb(60, 60, 60);
     transform: skew(-10deg);
 }
 
@@ -102,7 +104,7 @@ html {
     font-weight: bold;
     color: #fff;
     background-color: var(--primaryColor);
-    scale: 120%;
+    scale: 110%;
     transition: all 0.3s ease;
 }
 
@@ -119,6 +121,8 @@ html {
 .sticky {
     position: fixed;
     top: 0;
+    background-color: var(--secondaryColor);
+    transition: all 0.3s ease;
 }
 
 .navbar-link {
@@ -135,7 +139,7 @@ html {
 
 .navbar-link:hover {
     content: "";
-    scale: 120%;
+    scale: 110%;
     color: #fff;
     font-weight: bold;
     transition: scale 0.3s ease;
@@ -143,9 +147,9 @@ html {
 
 .change.navbar-link::before {
     color: #fff;
-    scale: 120%;
+    scale: 110%;
     font-weight: bold;
-    transition: scale 0.3s 0.3s ease;
+    transition: scale 0.3s ease;
 }
 
 /* Section 2 */
@@ -164,7 +168,7 @@ html {
     color: #333;
     letter-spacing: 0.5rem;
     border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(60, 60, 60);
 }
 
 .section2-body {
@@ -178,8 +182,68 @@ html {
 }
 
 .text-emphasize {
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
     font-weight: bold;
+}
+
+/*Skills list*/
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    margin: 3vh 2vw; /*vW is viewport width. vH is viewport height. */
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.9rem #777;
+}
+
+.skills-items-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 3vw;
+    list-style-type: none;
+}
+
+.skills-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    margin: 3vh 2.5vw;
+    padding: 2vh 3vw;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.9rem #777;
+}
+
+.skills-items img {
+    width: 8rem;
+}
+
+.skills-items img:hover {
+    scale: 110%;
+    transition: scale 0.3s ease;
+}
+
+.skills-items p {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-top: 2vh;
+}
+
+.skills-overview {
+    width: 90vw;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.5vh 2vw;
+    justify-content: center; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    text-align: center;
+    color: #fff;
+    background-color: var(--secondaryColor);
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
 }
 
 /*Course list*/
@@ -189,17 +253,17 @@ html {
     flex-direction: column;
     justify-content: space-evenly; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
-    margin: 5vh 2vw; /*vW is viewport width. vH is viewport height. */
+    margin: 3vh 2vw; /*vW is viewport width. vH is viewport height. */
     border-radius: 3rem;
     box-shadow: 0.3rem 0.3rem 0.9rem #777;
 }
 
 .course-items-container {
-    margin: 0 5vw;
+    margin: 0 3vw;
 }
 
 .course-items {
-    margin: 2vh 0;
+    margin: 3vh 2.5vw;
     font-size: 2.25rem;
 }
 
@@ -210,7 +274,7 @@ html {
 }
 
 .course-items a:hover { /*Changes behavior of a link when user hovers over it*/
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
     font-weight: bold;
     transition: color .3s ease;
 }
@@ -219,12 +283,12 @@ html {
     width: 90vw;
     font-size: 2.5rem;
     font-weight: bold;
-    margin: 1vh 2vw;
+    margin: 1.5vh 2vw;
     justify-content: center; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
     text-align: center;
     color: #fff;
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     padding: 0.5rem 3rem;
     letter-spacing: 0.3rem;
     transform: skew(-10deg);
@@ -232,7 +296,7 @@ html {
 
 .course-description {
     font-size: 2rem;
-    margin: 1vh 1vw 0 1vw;
+    margin: 1vh 1vw 1vh 1vw;
     justify-content: left; /*Horizontal alignment. */
     align-items: left; /*Vertical alignment. */
 }
@@ -254,7 +318,7 @@ html {
     letter-spacing: 0.5rem;
     margin-bottom: 3rem;
     border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(60, 60, 60);
 }
 
 .projects-wrapper {
@@ -272,7 +336,7 @@ html {
     box-shadow: 0.3rem 0.3rem 0.5rem #777;
     position: relative;
     overflow: hidden;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s ease;
 }
   
 .project:hover {
@@ -285,12 +349,12 @@ html {
     position: absolute;
     top: -10rem;
     z-index: 10;
-    transition: top 0.3s;
+    transition: top 0.3s ease;
 }
   
 .project:hover .project-text {
     top: 5rem;
-    transition: top 0.3s 0.3s;
+    transition: top 0.3s ease;
 }
   
 .project-name {
@@ -302,12 +366,12 @@ html {
   
 .project-technologies {
     font-size: 2rem;
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
 }
   
 .project-img {
     width: 40rem;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
 }
   
 .project:hover .project-img {
@@ -319,17 +383,25 @@ html {
     font-weight: 500;
     color: #333;
     letter-spacing: 0.1rem;
-    border: 0.3rem solid var(--primaryColor);
+    border: 0.3rem solid var(--secondaryColor);
     padding: 0 1rem;
     background-color: var(--backgroundColor);
     position: absolute;
     bottom: -5rem;
-    transition: bottom 0.3s;
+    transition: bottom 0.3s ease;
 }
   
 .project:hover .project-link {
     bottom: 5rem;
-    transition: bottom 0.3s 0.3s;
+    transition: bottom 0.3s ease;
+}
+
+.project-link:hover {
+    font-weight: bold;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    scale: 110%;
+    transition: all 0.3s ease;
 }
 
 /* Section 4 - Footer */
@@ -349,18 +421,13 @@ html {
 
 .social-media-link {
     padding: 0.7rem;
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     border-radius: 1rem;
     display: inline-block;
 }
 
 .social-media-link:hover {
-    margin: 0 2rem;
-    padding: 0.7rem;
-    background-color: var(--primaryColor);
-    border-radius: 1rem;
-    display: inline-block;
-    scale: 120%;
+    scale: 110%;
     transition: scale 0.3s ease;
 }
 
@@ -397,7 +464,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -424,7 +491,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -452,7 +519,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -479,7 +546,7 @@ html {
 
     .section1-heading {
         width: 90vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -506,7 +573,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -533,7 +600,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -560,7 +627,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -587,7 +654,7 @@ html {
 
     .section1-heading {
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
@@ -615,7 +682,7 @@ html {
     .section1-heading {
         margin: 5rem 0;
         width: 85vw;
-        text-shadow: .2rem .2rem 0.4rem rgb(0, 0, 0);
+        text-shadow: .2rem .2rem 0.4rem rgb(60, 60, 60);
     }
 
     .navbar-link {
