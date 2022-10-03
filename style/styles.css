@@ -93,7 +93,7 @@ html {
 .section1-btn {
     font-size: 1.7rem;
     font-weight: 700;
-    color: #333;
+    color: rgb(0, 0, 0);
     background-color: var(--backgroundColor);
     border: 0.3rem solid #333;
     padding: 0.5rem 1rem;
@@ -107,7 +107,7 @@ html {
     color: #fff;
     background-color: var(--primaryColor);
     scale: 110%;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Nav Bar */
@@ -115,7 +115,7 @@ html {
     width: 100%;
     height: 4rem;
     background-color: var(--primaryColor);
-    box-shadow: 0.2rem 0.2 rem 0.5rem #555;
+    box-shadow: 0.3rem 0.3rem 0.9rem #777;
     position: absolute;
     z-index: 300;
 }
@@ -124,14 +124,14 @@ html {
     position: fixed;
     top: 0;
     background-color: var(--secondaryColor);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-link {
     font-size: 1.7rem;
     font-weight: 600;
-    color: #333;
-    margin: 0 3rem;
+    color: rgb(0, 0, 0);
+    margin: 0 7.5rem;
     letter-spacing: 0.3rem;
 }
 
@@ -144,14 +144,14 @@ html {
     scale: 110%;
     color: #fff;
     font-weight: bold;
-    transition: scale 0.3s ease;
+    transition: scale 0.3s ease-in-out;
 }
 
 .change.navbar-link::before {
     color: #fff;
     scale: 110%;
     font-weight: bold;
-    transition: scale 0.3s ease;
+    transition: scale 0.3s ease-in-out;
 }
 
 /* Section 2 */
@@ -167,7 +167,7 @@ html {
 .section2-heading {
     margin-top: 10vh;
     font-size: 5rem;
-    color: #333;
+    color: rgb(0, 0, 0);
     letter-spacing: 0.5rem;
     border-bottom: 0.3rem solid #333;
     text-shadow: 0.1rem 0.1rem 0.2rem var(--shadowColor);
@@ -176,7 +176,7 @@ html {
 .section2-body {
     margin: 4vh 3vw;
     font-size: 2.5rem;
-    color: #333;
+    color: rgb(0, 0, 0);
 }
 
 .section2-body-intro {
@@ -213,6 +213,8 @@ html {
     flex-direction: column;
     justify-content: center; /*Horizontal alignment. */
     align-items: center; /*Vertical alignment. */
+    width: 14rem;
+    height: 14rem;
     margin: 3vh 2.5vw;
     padding: 2vh 3vw;
     border-radius: 3rem;
@@ -221,12 +223,7 @@ html {
 
 .skills-items img {
     width: 8rem;
-    height: 8rem;
-}
-
-.skills-items img:hover {
-    scale: 110%;
-    transition: scale 0.3s ease;
+    height: 7rem;
 }
 
 .skills-items p {
@@ -247,7 +244,7 @@ html {
     background-color: var(--secondaryColor);
     padding: 0.5rem 3rem;
     letter-spacing: 0.3rem;
-    transform: skew(10deg);
+    transform: skew(-10deg);
 }
 
 /*Course list*/
@@ -281,7 +278,7 @@ html {
 .course-items a:hover { /*Changes behavior of a link when user hovers over it*/
     color: var(--secondaryColor);
     font-weight: bold;
-    transition: color .3s ease;
+    transition: color .3s ease-in-out;
 }
 
 .course-overview {
@@ -317,9 +314,9 @@ html {
 }
 
 .section3-heading {
-    margin-top: 6vh;
+    margin: 6vh 0 4vh 0;
     font-size: 5rem;
-    color: #333;
+    color: rgb(0, 0, 0);
     letter-spacing: 0.5rem;
     border-bottom: 0.3rem solid #333;
     text-shadow: 0.1rem 0.1rem 0.2rem var(--shadowColor);
@@ -341,7 +338,7 @@ html {
     box-shadow: 0.3rem 0.3rem 0.5rem #777;
     position: relative;
     overflow: hidden;
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease-in-out;
 }
   
 .project:hover {
@@ -354,18 +351,18 @@ html {
     position: absolute;
     top: -10rem;
     z-index: 10;
-    transition: top 0.3s ease;
+    transition: top 0.3s ease-in-out;
 }
   
 .project:hover .project-text {
     top: 5rem;
-    transition: top 0.3s ease;
+    transition: top 0.3s ease-in-out;
 }
   
 .project-name {
     font-size: 3rem;
     font-weight: 700;
-    color: #333;
+    color: rgb(0, 0, 0);
     text-transform: capitalize;
 }
   
@@ -376,7 +373,7 @@ html {
   
 .project-img {
     width: 40rem;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
 }
   
 .project:hover .project-img {
@@ -386,19 +383,19 @@ html {
 .project-link {
     font-size: 2rem;
     font-weight: 500;
-    color: #333;
+    color: rgb(0, 0, 0);
     letter-spacing: 0.1rem;
     border: 0.3rem solid var(--secondaryColor);
     padding: 0 1rem;
     background-color: var(--backgroundColor);
     position: absolute;
     bottom: -5rem;
-    transition: bottom 0.3s ease;
+    transition: bottom 0.3s ease-in-out;
 }
   
 .project:hover .project-link {
     bottom: 5rem;
-    transition: bottom 0.3s ease;
+    transition: bottom 0.3s ease-in-out;
 }
 
 .project-link:hover {
@@ -406,7 +403,7 @@ html {
     background-color: var(--secondaryColor);
     color: #fff;
     scale: 110%;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Section 4 - Footer */
@@ -433,7 +430,7 @@ html {
 
 .social-media-link:hover {
     scale: 110%;
-    transition: scale 0.3s ease;
+    transition: scale 0.3s ease-in-out;
 }
 
 .social-media-link i {
@@ -484,7 +481,6 @@ html {
         margin: 1.5rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -510,7 +506,6 @@ html {
         margin: 1.5rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -537,7 +532,6 @@ html {
         margin: 1.5rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -563,7 +557,6 @@ html {
         margin: 1.5rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -589,7 +582,6 @@ html {
         margin: 1.5rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -615,7 +607,6 @@ html {
         margin: 1rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -641,7 +632,6 @@ html {
         margin: 1rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -667,7 +657,6 @@ html {
         margin: 1rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
@@ -694,7 +683,6 @@ html {
         margin: 1rem;
         width: 90vw;
         font-size: 2.5rem;
-        color: #333;
     }
 }
 
