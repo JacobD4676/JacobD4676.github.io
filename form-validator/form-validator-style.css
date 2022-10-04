@@ -47,7 +47,7 @@ body {
 .project-description {
     font-size: large;
     font-weight: bolder;
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 2vh 2vw;
     justify-content: left; /*Horizontal alignment. */
     align-items: left; /*Vertical alignment. */
 }
