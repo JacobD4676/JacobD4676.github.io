@@ -37,7 +37,7 @@ html {
 .section1 {
     width: 100%;
     height: 100vh;
-    background: url(/images/mountains.png) repeat-x;
+    background: url(/images/mountains.jpeg) repeat-x;
     background-size: cover;
     overflow: hidden;
     animation: movingBackground 300s linear infinite;
