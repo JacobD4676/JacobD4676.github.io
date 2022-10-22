@@ -1,9 +1,11 @@
 # JacobD4676.github.io
-Welcome to my programming portfolio hosted on GitHub Pages! Thanks for stopping by.
+Hi there!
 
-This portfolio is being deployed for educational/learning purposes. Feel free to reuse any code in this respository; we can learn together!
+Welcome to my programming portfolio hosted on GitHub Pages. Thanks for stopping by.
 
-Some of the projects in this respository were created by following alongside online courses (see HTML comment(s) at the top of each webpage for attribution).
+My name is Jacob, and I’m an aspiring software engineer with a passion for cybersecurity. I'm deploying this portfolio as part of my software engineering journey. I plan to add additional projects as I become more proficient with programming.
+
+Feel free to reuse any code in this respository!
 
 Have a great day,
 Jacob
