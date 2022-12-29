@@ -249,9 +249,9 @@ html {
     transform: skew(-10deg);
 }
 
-/*Course list*/
-.course-list {
-    list-style-type: none;
+
+/*Certification list*/
+.certifications-list {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; /*Horizontal alignment. */
@@ -262,28 +262,42 @@ html {
     box-shadow: 0.3rem 0.3rem 0.9rem #777;
 }
 
-.course-items-container {
-    margin: 0 3vw;
+.certifications-items-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    margin: 1vh 1vw;
+    list-style-type: none;
 }
 
-.course-items {
-    margin: 3vh 2.5vw;
-    font-size: 2.25rem;
+.certifications-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Horizontal alignment. */
+    align-items: center; /*Vertical alignment. */
+    width: 37.5rem;
+    height: 27.5rem;
+    margin: 2vh 2vw;
+    padding: 1vh 1vw;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.9rem #777;
 }
 
-.course-items a {
-    color: rgb(0, 0, 0);
-    font-family: "Lato", sans-serif;
-    letter-spacing: 0.1rem;
+.certifications-items img {
+    width: 20rem;
+    height: 18rem;
 }
 
-.course-items a:hover { /*Changes behavior of a link when user hovers over it*/
-    color: var(--secondaryColor);
+.certifications-items p {
+    text-align: center;
     font-weight: bold;
-    transition: color .3s ease-in-out;
+    font-size: 2.25rem;
+    margin-top: 2vh;
 }
 
-.course-overview {
+.certifications-overview {
     width: 90vw;
     font-size: 2.5rem;
     font-weight: bold;
@@ -298,12 +312,6 @@ html {
     transform: skew(-10deg);
 }
 
-.course-description {
-    font-size: 2rem;
-    margin: 1vh 1vw 1vh 1vw;
-    justify-content: left; /*Horizontal alignment. */
-    align-items: left; /*Vertical alignment. */
-}
 
 /* Section 3 */
 .section3 {
